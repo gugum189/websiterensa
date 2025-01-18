@@ -78,20 +78,33 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
       <video class="vid-slider active" src="1.mp4" autoplay muted loop></video>
-      <video class="vid-slider" src="assets/video/2.MOV" autoplay muted loop></video>
+      <video class="vid-slider" src="assets/video/2.mov" autoplay muted loop></video>
+      <video class="vid-slider" src="assets/video/3.mp4" autoplay muted loop></video>
+    
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 order-3 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>Better Solutions For Your Home</h1>
-            <p>we can make your dream home</p>
+            <div class="text-slider active">
+              <h1>Better Solutions For Your Home</h1>
+              <p>We can make your dream home</p>
+            </div>
+            <div class="text-slider">
+              <h1>Modern Design for Living</h1>
+              <p>Professional solutions for every room</p>
+            </div>
+            <div class="text-slider">
+              <h1>Make Your Space Perfect</h1>
+              <p>Decorate with the best materials</p>
+            </div>
           </div>
         </div>
+        
         <div class="slider-navigation">
           <div class="nav-btn active"></div>
           <div class="nav-btn"></div>
           <div class="nav-btn"></div>
-          <div class="nav-btn"></div>          
         </div>
+
       </div>
 
     </section><!-- /Hero Section -->
@@ -111,23 +124,19 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="content" data-aos="fade-up" data-aos-delay="100">
             <p>
               Rensa Wallpaper mengutamakan kepuasan belanja konsumennya, selain menyediakan beberapa kebutuhan konsumen yang ready 
               stock dengan harga produk yang sangat terjangkau dan orang-orang profesional dibidangnya, kami pun sangat memperhatikan kenyamanan konsumen dalam melakukan aktifitas belanja di toko-toko kami.
             </p>
-            <ul>
-              <li><i class="bi bi-check2-circle"></i> <span><b>Terpercaya selama 12 tahun.</b></span></li>
-              <li><i class="bi bi-check2-circle"></i> <span><b>Terbaik dalam kualitas</b></span></li>
-              <li><i class="bi bi-check2-circle"></i> <span><b>Terbesar se indonesia</b></span></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Perusahaan kami bergerak dibidang Interior khususnya Wallpaper dengan sistem penjualan retail. Sebagai toko wallpaper kami cukup berpengalaman tentang dunia wallpaper. </p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-
+            
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span><b>Terpercaya selama 12 tahun.</b></span></li>
+                <li><i class="bi bi-check2-circle"></i> <span><b>Terbaik dalam kualitas</b></span></li>
+                <li><i class="bi bi-check2-circle"></i> <span><b>Terbesar se indonesia</b></span></li>
+              </ul>
+            
+            
         </div>
 
       </div>
@@ -473,6 +482,7 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
+                  <video class="vid-slider active" src="1.mp4" autoplay muted loop></video>
                   <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
@@ -489,6 +499,7 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
+                  <video class="vid-slider" src="assets/video/2.mov" autoplay muted loop></video>
                   <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
@@ -813,49 +824,37 @@
 <!-- js for video slider nav -->
 <script type="text/javascript">
   //slider video hero
+    const btns = document.querySelectorAll(".nav-btn");
+    const vid = document.querySelectorAll(".vid-slider");
+    const text = document.querySelectorAll(".text-slider");
 
-  const btns = document.querySelectorAll(".nav-btn");
-  const vid = document.querySelectorAll(".vid-slider");
-  const faq = document.querySelectorAll(".faq-item");
+    let currentSlide = 0;
+    const slideInterval = 5000; // Waktu interval per slide (5 detik)
 
-  var faqnav = function(manual){
-    faq.forEach((fak) => {
-      fak.classList.remove("faq-active");
-    })
+    function sliderNav(manual) {
+      btns.forEach((btn) => btn.classList.remove("active"));
+      vid.forEach((vids) => vids.classList.remove("active"));
+      text.forEach((txt) => txt.classList.remove("active"));
 
-    faq[manual].classList.add("faq-active");
-  }
+      btns[manual].classList.add("active");
+      vid[manual].classList.add("active");
+      text[manual].classList.add("active");
+    }
 
-  faq.forEach((faq,i) => {
-    faq.addEventListener("click", () =>{
-      faqnav(i);
+    function autoSlider() {
+      currentSlide = (currentSlide + 1) % vid.length; // Loop kembali ke awal
+      sliderNav(currentSlide);
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+        currentSlide = i; // Update slide yang sedang aktif berdasarkan klik
+      });
     });
-  });
 
-  var sliderNav = function(manual){
-    btns.forEach((btn) => {
-      btn.classList.remove("active");
-    });
-
-    vid.forEach((vids) => {
-      vids.classList.remove("active");
-    });
-
-    btns[manual].classList.add("active");
-    vid[manual].classList.add("active");
-  }
-
-  btns.forEach((btn,i) => {
-    btn.addEventListener("click", () =>{
-      sliderNav(i);
-    });
-  });
-
-  vid.forEach((btn,i) => {
-    btn.addEventListener("click", () =>{
-      sliderNav(i);
-    });
-  });
+// Jalankan auto slider secara otomatis
+    setInterval(autoSlider, slideInterval);
  </script>
 </body>
 

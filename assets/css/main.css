@@ -943,16 +943,16 @@ section,
   }
 
   .slider-navigation .nav-btn{
-    width: 12px;
-    height: 12px;
-    background: #b0c38b;
+    width: 15px;
+    height: 15px;
+    background: #FDF7F4;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
   }
 
   .slider-navigation .nav-btn.active{
-    background-color: #315b4b;
+    background-color: #b0c38b;
   }
 
   .slider-navigation .nav-btn:not(:last-child){
@@ -973,6 +973,14 @@ section,
     clip-path: circle(150% at 0 50%);
     transition: 2s ease;
     transition-property: clip-path;
+  }
+
+  .text-slider {
+    display: none;
+  }
+  
+  .text-slider.active {
+    display: block;
   }
 @media (max-width: 640px) {
   .hero h1 {
