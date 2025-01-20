@@ -79,7 +79,8 @@
     <section id="hero" class="hero section dark-background">
       <video class="vid-slider active" src="1.mp4" autoplay muted loop></video>
       <video class="vid-slider" src="assets/video/2.mov" autoplay muted loop></video>
-      <video class="vid-slider" src="assets/video/3.mp4" autoplay muted loop></video>
+      <!-- <video class="vid-slider" src="assets/video/3.mp4" autoplay muted loop></video> -->
+      <img class="vid-slider" src="assets/img/services.jpg" alt="">
     
       <div class="container">
         <div class="row gy-4">
@@ -842,37 +843,62 @@
 <!-- js for video slider nav -->
 <script type="text/javascript">
   //slider video hero
-    const btns = document.querySelectorAll(".nav-btn");
-    const vid = document.querySelectorAll(".vid-slider");
-    const text = document.querySelectorAll(".text-slider");
+  const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".vid-slider"); // Ini bisa berupa video atau gambar
+const text = document.querySelectorAll(".text-slider");
 
-    let currentSlide = 0;
-    const slideInterval = 5000; // Waktu interval per slide (5 detik)
+let currentSlide = 0;
+const slideInterval = 5000; // Interval waktu per slide (5 detik)
 
-    function sliderNav(manual) {
-      btns.forEach((btn) => btn.classList.remove("active"));
-      vid.forEach((vids) => vids.classList.remove("active"));
-      text.forEach((txt) => txt.classList.remove("active"));
+function sliderNav(manual) {
+  // Pastikan elemen 'manual' valid
+  if (!btns[manual] || !slides[manual] || !text[manual]) {
+    console.error(`Slide ${manual} tidak ditemukan`);
+    return;
+  }
 
-      btns[manual].classList.add("active");
-      vid[manual].classList.add("active");
-      text[manual].classList.add("active");
+  // Hapus kelas aktif dari semua tombol, slide, dan teks
+  btns.forEach((btn) => btn.classList.remove("active"));
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+
+    // Jika slide adalah video, hentikan video
+    if (slide.tagName.toLowerCase() === 'video') {
+      slide.pause();
+      slide.currentTime = 0;
     }
+  });
 
-    function autoSlider() {
-      currentSlide = (currentSlide + 1) % vid.length; // Loop kembali ke awal
-      sliderNav(currentSlide);
-    }
+  text.forEach((txt) => txt.classList.remove("active"));
 
-    btns.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        sliderNav(i);
-        currentSlide = i; // Update slide yang sedang aktif berdasarkan klik
-      });
-    });
+  // Aktifkan slide yang dipilih
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+
+  // Jika slide adalah video, putar video
+  if (slides[manual].tagName.toLowerCase() === 'video') {
+    slides[manual].play();
+  }
+
+  text[manual].classList.add("active");
+}
+
+function autoSlider() {
+  // Pindah ke slide berikutnya, jika di slide terakhir, kembali ke slide pertama
+  currentSlide = (currentSlide + 1) % slides.length;
+  sliderNav(currentSlide);
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);
+    currentSlide = i; // Set slide aktif berdasarkan klik
+  });
+});
 
 // Jalankan auto slider secara otomatis
-    setInterval(autoSlider, slideInterval);
+setInterval(autoSlider, slideInterval);
+
  </script>
 </body>
 
