@@ -850,6 +850,16 @@ section,
   z-index: 1;
 }
 
+.testi {
+  width: 100%;
+  min-height: 5vh;
+  position: relative;
+  padding: 120px 0 60px 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
 .hero h1 {
   margin: 0;
   font-size: 48px;
