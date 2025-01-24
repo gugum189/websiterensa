@@ -31,6 +31,15 @@
   --nav-dropdown-hover-color: #b0c38b; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
+:root {
+  --kal-color: #FDF7F4;  /* The default color of the main navmenu links */
+  --kal-hover-color: #FDF7F4; /* Applied to main navmenu links when they are hovered over or active */
+  --kal-mobile-background-color: #FDF7F4; /* Used as the background color for mobile navigation menu */
+  --kal-dropdown-background-color: #FDF7F4; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --kal-dropdown-color: #FDF7F4; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --kal-dropdown-hover-color: #FDF7F4; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
@@ -211,6 +220,121 @@ h6 {
   --background-color: rgba(60, 98, 82, 0.9);
 }
 
+/*--------------------------------------------------------------
+# Kalkulator Menu
+--------------------------------------------------------------*/
+kal {
+  padding: 0;
+}
+
+.kal ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  /* background-color: #b0c38b; */
+}
+
+.kal li {
+  position: relative;
+}
+
+.kal a,
+.kal a:focus {
+  color: var(--kal-color);
+  padding: 18px 15px;
+  font-size: 15px;
+  font-family: var(--nav-font);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  transition: 0.3s;
+  background-color: #b0c38b;
+}
+
+.kal a i,
+.kal a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.kal li:last-child a {
+  padding-right: 0;
+  /* background-color: #FDF7F4; */
+}
+
+.kal li:hover>a,
+.kal .active,
+.kal .active:focus {
+  color: var(--kal-hover-color);
+}
+
+.kal .a .isian{
+  
+  color: #FDF7F4;
+
+}
+
+.kal .dropdown ul {
+  margin: 0;
+  padding: 10px 0;
+  background: var(--kal-dropdown-background-color);
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  left: 14px;
+  top: 130%;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 4px;
+  z-index: 99;
+  box-shadow: 0px 0px 30px rgba(62, 53,48, 0.1);
+}
+
+.kal .dropdown ul li {
+  min-width: 200px;
+}
+
+.kal .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+  color: var(--kal-dropdown-color);
+}
+
+.kal .dropdown ul a i {
+  font-size: 12px;
+}
+
+.kal .dropdown ul a:hover,
+.kal .dropdown ul .active:hover,
+.kal .dropdown ul li:hover>a {
+  color: var(--kal-dropdown-hover-color);
+}
+
+.kal .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.kal .dropdown .dropdown ul {
+  top: 0;
+  left: -90%;
+  visibility: hidden;
+}
+
+.kal .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: -100%;
+  visibility: visible;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
