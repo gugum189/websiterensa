@@ -1,80 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Rensa Interior Decoration</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/logo.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top"> 
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo_panjang.png" class="img-fluid">
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#portfolio">Product</a></li>
-          <li><a href="testimoni.html#testimoni">Testimoni</a></li>
-          <li><a href="kalkulator.html#kalkulator">Kalkulator</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-          <!-- <li><a href="#team">Team</a></li> -->
-          <!-- <li><a href="#pricing">Pricing</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> 
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="service-details.html">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>-->
-          
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="#about">Konsultasi</a>
-
-    </div>
-  </header>
+<?php include 'header.php'; ?>
 
   <main class="main">
 
@@ -154,7 +78,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-5 d-flex flex-column justify-content-center order-2 order-lg-3">
+          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-3">
 
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
               <h3><span>Why Us</span><strong> Pilihan utama</strong></h3>
@@ -302,110 +226,110 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-indoor">
-              <a href="portfolio-details.html">
+              <a href="portfolio-details.php">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
               </a>
               <div class="portfolio-info">
                 <h4>Indoor Decor</h4>
                 <p>Product Wall Decor Indoor</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Indoor Decor" data-gallery="portfolio-gallery-wall" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="portfolio-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-flooring">
-              <a href="portfolio-details.html">
+              <a href="portfolio-details.php">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
               </a>
               <div class="portfolio-info">
                 <h4>Wallpaper</h4>
                 <p>Semua produk wallpaper</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="portfolio-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-indoor">
-              <a href="portfolio-details.html">
+              <a href="portfolio-details.php">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
               </a>
               <div class="portfolio-info">
                 <h4>Pohon artificial</h4>
                 <p>Kumpulan produk pohon artificial</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="portfolio-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pasang">
-              <a href="portfolio-details.html">
+              <a href="portfolio-details.php">
               <img src="assets/img/masonry-portfolio/Pemasangan.jpg" class="img-fluid" alt="">
               </a>
               <div class="portfolio-info">
                 <h4>Katalog Pemasangan</h4>
                 <p>Berisi semua foto pemasangan product</p>
                 <a href="assets/img/masonry-portfolio/Pemasangan.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="portfolio-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wall filter-wallboard">
-              <a href="portfolio-details.html">
+              <a href="portfolio-details.php">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
               </a>
               <div class="portfolio-info">
                 <h4>WPC Product</h4>
                 <p>Product wallpanel</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="WPC product" data-gallery="portfolio-gallery-wall" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="portfolio-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wall">
-              <a href="portfolio-details.html">
+              <a href="portfolio-details.php">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
               </a>
               <div class="portfolio-info">
                 <h4>Wallpanel</h4>
                 <p>Kumpulan Produck Wallpanel</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="portfolio-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-outdoor">
-              <a href="portfolio-details.html">
+              <a href="portfolio-details.php">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
               </a>
               <div class="portfolio-info">
                 <h4>Decking</h4>
                 <p>Kumpulan product decking</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="portfolio-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wallboard">
-              <a href="portfolio-details.html">
+              <a href="portfolio-details.php">
               <img src="assets/img/masonry-portfolio/Wallboard.jpg" class="img-fluid" alt="">
               </a>
               <div class="portfolio-info">
                 <h4>Wallboard</h4>
                 <p>Kumpulan wallboard</p>
                 <a href="assets/img/masonry-portfolio/Wallboard.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="portfolio-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-flooring filter-indoor">
-              <a href="portfolio-details.html">
+              <a href="portfolio-details.php">
               <img src="assets/img/masonry-portfolio/vinyl1.jpg" class="img-fluid" alt="">
               </a>
               <div class="portfolio-info">
                 <h4>Lantai Vinyl</h4>
                 <p>Lorem ipsum, dolor sit</p>
                 <a href="assets/img/masonry-portfolio/vinyl1.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="portfolio-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -422,52 +346,52 @@
 
 
 <!-- Skills Section -->
-<section id="team" class="team section">
+    <section id="team" class="team section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Store</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-  </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Store</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
 
-  <div class="container">
+      <div class="container">
 
-    <div class="row gy-4">
+        <div class="row gy-4">
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="team-member d-flex align-items-start">
-          <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-          <div class="member-info">
-            <h4>Rensa ID IBCC</h4>
-            <a href="https://api.whatsapp.com/send?phone=6281572344444&text=Hello Rensa IBCC!"><span>0815-7234-4444</span></a>
-            <p> Komplek, Plaza Ibcc, Jl. A. Yani No.296, Kacapiring, Bandung, Kota Bandung, Jawa Barat 40271</p>
-            <div class="social">
-              <a href="https://www.instagram.com/rensa_wallpaper_ibcc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
-              <a href="https://maps.app.goo.gl/ySyKyyWTHUeUnrAy9"><i class="bi bi-geo-alt"></i> </a>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rensa ID IBCC</h4>
+                <a href="https://api.whatsapp.com/send?phone=6281572344444&text=Hello Rensa IBCC!"><span>0815-7234-4444</span></a>
+                <p> Komplek, Plaza Ibcc, Jl. A. Yani No.296, Kacapiring, Bandung, Kota Bandung, Jawa Barat 40271</p>
+                <div class="social">
+                  <a href="https://www.instagram.com/rensa_wallpaper_ibcc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
+                  <a href="https://maps.app.goo.gl/ySyKyyWTHUeUnrAy9"><i class="bi bi-geo-alt"></i> </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
+          </div><!-- End Team Member -->
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="team-member d-flex align-items-start">
-          <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-          <div class="member-info">
-            <h4>Rensa Cimahi</h4>
-            <a href="https://api.whatsapp.com/send?phone=6281573544444&text=Hello Rensa Cimahi!"><span>0815-7354-4444</span></a>
-            <p>Jl. Jend. H. Amir Machmud No.563, Cimahi, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40523</p>
-            <div class="social">
-              <a href="https://www.instagram.com/rensa_wallpapercimahi/"><i class="bi bi-instagram"></i></a>
-              <a href="https://maps.app.goo.gl/wfL3jYa55TX9aSiC6"><i class="bi bi-geo-alt"></i> </a>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rensa Cimahi</h4>
+                <a href="https://api.whatsapp.com/send?phone=6281573544444&text=Hello Rensa Cimahi!"><span>0815-7354-4444</span></a>
+                <p>Jl. Jend. H. Amir Machmud No.563, Cimahi, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40523</p>
+                <div class="social">
+                  <a href="https://www.instagram.com/rensa_wallpapercimahi/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://maps.app.goo.gl/wfL3jYa55TX9aSiC6"><i class="bi bi-geo-alt"></i> </a>
+                </div>
+              </div>
             </div>
-          </div>
+          </div><!-- End Team Member -->
         </div>
-      </div><!-- End Team Member -->
-    </div>
 
-  </div>
+      </div>
 
-</section><!-- /Team Section -->
+    </section><!-- /Team Section -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
@@ -512,7 +436,7 @@
                   <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <a  href="testimoni.html" class="btntesti justify-content-center">See More</a>
+                <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
               </div>
             </div><!-- End testimonial item -->
 
@@ -530,7 +454,7 @@
                   <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <a  href="testimoni.html" class="btntesti justify-content-center">See More</a>
+                <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
               </div>
             </div><!-- End testimonial item -->
 
@@ -547,7 +471,7 @@
                   <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <a  href="testimoni.html" class="btntesti justify-content-center">See More</a>
+                <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
               </div>
             </div><!-- End testimonial item -->
 
@@ -564,7 +488,7 @@
                   <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <a  href="testimoni.html" class="btntesti justify-content-center">See More</a>
+                <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
               </div>
             </div><!-- End testimonial item -->
 
@@ -581,7 +505,7 @@
                   <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <a  href="testimoni.html" class="btntesti justify-content-center">See More</a>
+                <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
               </div>
             </div><!-- End testimonial item -->
 
@@ -753,162 +677,4 @@
 
   </main>
 
-  <footer id="footer" class="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6">
-            <h4>Join Our Buletin</h4>
-            <p>Subscribe to our Buletin and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <!-- <span class="sitename">Arsha</span> -->
-            <img src="assets/img/logo_kecil.png" class="img-fluid">
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Jl. Baros No.52 </p>
-            <p>Kota Cimahi, Jawa Barat 40521</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+62 815-4600-4444</span></p>
-            <p><strong>Email:</strong> <span>info@rensa.id</span></p>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-          </ul>
-        </div>
-
-        <!-- <div class="col-lg-2 col-md-3 footer-links"> 
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-          </ul>
-        </div>-->
-
-        <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
-          <div class="social-links d-flex">
-            <a href="https://www.facebook.com/profile.php?id=61565434780323"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/rensa_id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Rensa ID</strong> <span>All Rights Reserved</span></p>
-      <!-- <div class="credits">        
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div> -->
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  
-<!-- js for video slider nav -->
-<script type="text/javascript">
-  //slider video hero
-  const btns = document.querySelectorAll(".nav-btn");
-const slides = document.querySelectorAll(".vid-slider"); // Ini bisa berupa video atau gambar
-const text = document.querySelectorAll(".text-slider");
-
-let currentSlide = 0;
-const slideInterval = 5000; // Interval waktu per slide (5 detik)
-
-function sliderNav(manual) {
-  // Pastikan elemen 'manual' valid
-  if (!btns[manual] || !slides[manual] || !text[manual]) {
-    console.error(`Slide ${manual} tidak ditemukan`);
-    return;
-  }
-
-  // Hapus kelas aktif dari semua tombol, slide, dan teks
-  btns.forEach((btn) => btn.classList.remove("active"));
-  slides.forEach((slide) => {
-    slide.classList.remove("active");
-
-    // Jika slide adalah video, hentikan video
-    if (slide.tagName.toLowerCase() === 'video') {
-      slide.pause();
-      slide.currentTime = 0;
-    }
-  });
-
-  text.forEach((txt) => txt.classList.remove("active"));
-
-  // Aktifkan slide yang dipilih
-  btns[manual].classList.add("active");
-  slides[manual].classList.add("active");
-
-  // Jika slide adalah video, putar video
-  if (slides[manual].tagName.toLowerCase() === 'video') {
-    slides[manual].play();
-  }
-
-  text[manual].classList.add("active");
-}
-
-function autoSlider() {
-  // Pindah ke slide berikutnya, jika di slide terakhir, kembali ke slide pertama
-  currentSlide = (currentSlide + 1) % slides.length;
-  sliderNav(currentSlide);
-}
-
-btns.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    sliderNav(i);
-    currentSlide = i; // Set slide aktif berdasarkan klik
-  });
-});
-
-// Jalankan auto slider secara otomatis
-setInterval(autoSlider, slideInterval);
-
- </script>
-</body>
-
-</html>
+  <?php include 'footer.php'; ?>
