@@ -32,7 +32,7 @@
 }
 
 :root {
-  --kal-color: #FDF7F4;  /* The default color of the main navmenu links */
+  --kal-color: #b0c38b;  /* The default color of the main navmenu links */
   --kal-hover-color: #FDF7F4; /* Applied to main navmenu links when they are hovered over or active */
   --kal-mobile-background-color: #FDF7F4; /* Used as the background color for mobile navigation menu */
   --kal-dropdown-background-color: #FDF7F4; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -48,10 +48,10 @@
 }
 
 .dark-background {
-  --background-color: #3c6052;
+  --background-color: #3e3530;
   --default-color: #FDF7F4;
   --heading-color: #FDF7F4;
-  --surface-color: #315b4b;
+  --surface-color: #3e3530;
   --contrast-color: #FDF7F4;
 }
 
@@ -146,7 +146,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #3c6052;
+  --background-color: #3e3530;
   --heading-color: #FDF7F4;
   color: var(--default-color);
   background-color: var(--background-color);
@@ -187,7 +187,7 @@ h6 {
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, #3e3530, transparent 15%);
 }
 
 @media (max-width: 100px) {
@@ -217,123 +217,134 @@ h6 {
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: rgba(60, 98, 82, 0.9);
+  --background-color: rgba(62, 53, 48, 0.9);
 }
 
 /*--------------------------------------------------------------
 # Kalkulator Menu
 --------------------------------------------------------------*/
-kal {
-  padding: 0;
-}
-
-.kal ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-  /* background-color: #b0c38b; */
-}
-
-.kal li {
+/* Customize the select dropdown */
+select.kal {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #FDF7F4;
+  border: 1px solid #b0c38b;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none; /* Firefox */
   position: relative;
+  padding-right: 40px; /* Make room for the arrow */
 }
 
-.kal a,
-.kal a:focus {
-  color: var(--kal-color);
-  padding: 18px 15px;
-  font-size: 15px;
-  font-family: var(--nav-font);
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  white-space: nowrap;
-  transition: 0.3s;
-  background-color: #b0c38b;
-}
-
-.kal a i,
-.kal a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-  transition: 0.3s;
-}
-
-.kal li:last-child a {
-  padding-right: 0;
-  /* background-color: #FDF7F4; */
-}
-
-.kal li:hover>a,
-.kal .active,
-.kal .active:focus {
-  color: var(--kal-hover-color);
-}
-
-.kal .a .isian{
-  
-  color: #FDF7F4;
-
-}
-
-.kal .dropdown ul {
-  margin: 0;
-  padding: 10px 0;
-  background: var(--kal-dropdown-background-color);
-  display: block;
+/* Add a custom arrow */
+select.kal::after {
+  content: '\25BC'; /* Unicode character for down arrow */
   position: absolute;
-  visibility: hidden;
-  left: 14px;
-  top: 130%;
-  opacity: 0;
-  transition: 0.3s;
-  border-radius: 4px;
-  z-index: 99;
-  box-shadow: 0px 0px 30px rgba(62, 53,48, 0.1);
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make sure arrow is not clickable */
+  font-size: 16px;
+  color: #b0c38b;
 }
 
-.kal .dropdown ul li {
-  min-width: 200px;
+/* Hover effect */
+select.kal:hover {
+  border-color: #FDF7F4;
+  background-color: #b0c38b;
+  color: #FDF7F4;
 }
 
-.kal .dropdown ul a {
+/* Customize options */
+select.kal option {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #FDF7F4;
+  color: #315b4b;
+}
+
+/* Remove outline on focus */
+select.kal:focus {
+  outline: none;
+  border-color: #b0c38b;
+}
+
+/*--------------------------------------------------------------
+# info warp kal Menu
+--------------------------------------------------------------*/
+
+.info-wrap {
+  background-color: #FDF7F4; /* Light background color similar to form elements */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd; /* Soft border to blend with other sections */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Add spacing and font styling */
+.info-wrap h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #315b4b; /* Dark color for readability */
+}
+
+.info-wrap ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-wrap ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Reuse button styles for the .info-wrap a */
+.info-wrap a.btn {
+  display: inline-block;
   padding: 10px 20px;
-  font-size: 15px;
-  text-transform: none;
-  color: var(--kal-dropdown-color);
+  background-color: #b0c38b; /* Same as Send Message button */
+  color: #FDF7F4;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 
-.kal .dropdown ul a i {
-  font-size: 12px;
+/* Hover effect for the button */
+.info-wrap a.btn:hover {
+  background-color: #b7ce89;
+  text-decoration: none;
 }
 
-.kal .dropdown ul a:hover,
-.kal .dropdown ul .active:hover,
-.kal .dropdown ul li:hover>a {
-  color: var(--kal-dropdown-hover-color);
+
+.btntesti {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b0c38b; /* Same as Send Message button */
+  color: #FDF7F4;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  /* align-items: center; */
+  padding: 10px 20px;
 }
 
-.kal .dropdown:hover>ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.kal .dropdown .dropdown ul {
-  top: 0;
-  left: -90%;
-  visibility: hidden;
-}
-
-.kal .dropdown .dropdown:hover>ul {
-  opacity: 1;
-  top: 0;
-  left: -100%;
-  visibility: visible;
+/* Hover effect for the button */
+.btntesti:hover {
+  background-color: #b7ce89;
+  text-decoration: none;
 }
 /*--------------------------------------------------------------
 # Navigation Menu
