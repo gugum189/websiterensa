@@ -186,11 +186,11 @@
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
-            <h3>Call To Action</h3>
+            <h3>Call Us Here</h3>
             <p>Hubungi kami untuk info lebih lanjut mengenai product product kami.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://api.whatsapp.com/send?phone=6281546004444&text=Hello Rensa!">Call To Action</a>
+            <a class="cta-btn align-middle" href="https://api.whatsapp.com/send?phone=6281546004444&text=Hello Rensa!">Call Us</a>
           </div>
         </div>
 

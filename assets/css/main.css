@@ -43,7 +43,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f5f6f8;
+  --background-color: rgba(255, 252, 250, 0.925);
   --surface-color: #FDF7F4;
 }
 

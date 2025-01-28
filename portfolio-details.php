@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+  <?php include 'header.php'; ?>
   <main class="main">
 
   <section id="hero" class="testi section dark-background"></section>
@@ -50,19 +50,19 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="assets/img/pemasangan/2.jpg" title="Product 1" class="glightbox preview-link">
+                  <a href="assets/img/pemasangan/3.jpg" title="Product 1" class="glightbox preview-link">
                   <img src="assets/img/pemasangan/3.jpg" alt="">
                   </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="assets/img/pemasangan/2.jpg" title="Product 1" class="glightbox preview-link">
+                  <a href="assets/img/pemasangan/4.jpg" title="Product 1" class="glightbox preview-link">
                   <img src="assets/img/pemasangan/4.jpg" alt="">
                   </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="assets/img/pemasangan/2.jpg" title="Product 1" class="glightbox preview-link">
+                  <a href="assets/img/pemasangan/5.jpg" title="Product 1" class="glightbox preview-link">
                   <img src="assets/img/pemasangan/5.jpg" alt="">
                   </a>
                 </div>
@@ -73,6 +73,12 @@
           </div>
 
           <div class="col-lg-4">
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Katalog Pemasangan</h2>
+              <p>
+                Katalog yang berisi tentang pemasangan produk produk rensa.
+              </p>
+            </div>
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Product information</h3>
               <ul>
@@ -81,13 +87,9 @@
                 <!-- <li><strong>Project date</strong>: 01 March, 2020</li> -->
                 <!-- <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li> -->
               </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Katalog Pemasangan</h2>
-              <p>
-                Katalog yang berisi tentang pemasangan produk produk rensa.
-              </p>
-            </div>
+              <a  href="testimoni.php" class="btntesti justify-content-center">Konsultasi</a>
+            </div>            
+            
           </div>
 
         </div>
