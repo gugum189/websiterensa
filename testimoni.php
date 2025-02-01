@@ -4,7 +4,7 @@
 
         <section id="hero" class="testi section dark-background"></section>
         <!-- Page Title -->
-        <section id="testi" class="portfolio section">
+        <section id="testimoni" class="portfolio section">
 
             <!-- Section Title -->
             <div class="container">

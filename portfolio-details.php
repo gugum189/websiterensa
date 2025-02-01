@@ -73,7 +73,7 @@
           </div>
 
           <div class="col-lg-4">
-          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Katalog Pemasangan</h2>
               <p>
                 Katalog yang berisi tentang pemasangan produk produk rensa.

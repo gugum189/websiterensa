@@ -4,7 +4,7 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-      <video class="vid-slider active" src="1.mp4" autoplay muted loop></video>
+      <video class="vid-slider active" src="assets/video/websitee.mp4" autoplay muted loop></video>
       <video class="vid-slider" src="assets/video/2.mov" autoplay muted loop></video>
       <!-- <video class="vid-slider" src="assets/video/3.mp4" autoplay muted loop></video> -->
       <img class="vid-slider" src="assets/img/services.jpg" alt="">
@@ -209,7 +209,7 @@
 
       <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="isotope-layout " data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All </li>
@@ -332,12 +332,15 @@
                 <a href="portfolio-details.php" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+            
             
 
             
           </div><!-- End Portfolio Container -->
-
+          <div class="divtesti">
+              <a  href="testimoni.php" class="btntesti ">See More</a>
+          </div>
+          
         </div>
 
       </div>
@@ -345,7 +348,7 @@
     </section><!-- /Portfolio Section -->
 
 
-<!-- Skills Section -->
+    <!-- Skills Section -->
     <section id="team" class="team section">
 
       <!-- Section Title -->
@@ -394,7 +397,7 @@
     </section><!-- /Team Section -->
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <section id="testimoni" class="testimonials section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -436,7 +439,7 @@
                   <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
+                
               </div>
             </div><!-- End testimonial item -->
 
@@ -454,7 +457,7 @@
                   <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
+                
               </div>
             </div><!-- End testimonial item -->
 
@@ -471,7 +474,7 @@
                   <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
+                
               </div>
             </div><!-- End testimonial item -->
 
@@ -488,7 +491,7 @@
                   <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
-                <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
+                
               </div>
             </div><!-- End testimonial item -->
 
@@ -504,13 +507,16 @@
                   <i class="bi bi-quote quote-icon-left"></i>
                   <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
+                </p>                
               </div>
             </div><!-- End testimonial item -->
 
           </div>
           <div class="swiper-pagination"></div>
+          <div class="divtesti">
+            <a  href="testimoni.php" class="btntesti justify-content-center">See More</a>
+        </div>
+          
           
         </div>
 

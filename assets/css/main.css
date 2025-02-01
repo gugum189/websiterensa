@@ -323,7 +323,12 @@ select.kal:focus {
   text-decoration: none;
 }
 
-
+.divtesti {
+  display: flex;
+  justify-content: center;  /* Posisi horizontal */
+  align-items: center;      /* Posisi vertikal */
+  height: 150px;            /* Berikan tinggi pada div jika diperlukan */
+}
 .btntesti {
   display: inline-block;
   padding: 10px 20px;
@@ -343,7 +348,7 @@ select.kal:focus {
 
 /* Hover effect for the button */
 .btntesti:hover {
-  background-color: #b7ce89;
+  background-color: #c1d49b;
   text-decoration: none;
 }
 /*--------------------------------------------------------------
@@ -1444,6 +1449,7 @@ section,
 
 .services .service-item:hover {
   transform: translateY(-10px);
+  /* background-image: url("assets/img/pemasangan/2jpg"); */
 }
 
 .services .service-item:hover h4 a {
