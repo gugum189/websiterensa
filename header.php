@@ -41,12 +41,12 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.php" class="active">Home</a></li>
-          <li><a href="index.php#about">About</a></li>
-          <li><a href="index.php#services">Services</a></li>
+          <!-- <li><a href="index.php#about">About</a></li>
+          <li><a href="index.php#services">Services</a></li> -->
           <li><a href="index.php#portfolio">Product</a></li>
           <li><a href="testimoni.php#testimoni">Testimoni</a></li>
           <li><a href="kalkulator.php#kalkulator">Kalkulator</a></li>
-          <li><a href="index.php#contact">Contact</a></li>
+          <li><a href="index.php#team">Store</a></li>
           <!-- <li><a href="#team">Team</a></li> -->
           <!-- <li><a href="#pricing">Pricing</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> 
@@ -71,7 +71,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Konsultasi</a>
+      <a class="btn-getstarted" href="https://api.whatsapp.com/send?phone=6281546004444&text=Hello Rensa Saya mau konsultasi!">Konsultasi</a>
 
     </div>
   </header>

@@ -116,9 +116,11 @@
 
           </div>
 
-          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-            <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-          </div>
+          <div class="sketchfab-embed-wrapper"> 
+            <iframe title="SIMULASI RUANG TAMU ALA RENSA.ID" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" 
+            xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="200" height="200" src="https://sketchfab.com/models/406940b887f64fc5b28328b8362871e8/embed?ui_theme=dark"> 
+          </iframe> 
+        </div>
         </div>
 
       </div>
@@ -381,6 +383,66 @@
               <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Rensa Cimahi</h4>
+                <a href="https://api.whatsapp.com/send?phone=6281573544444&text=Hello Rensa Cimahi!"><span>0815-7354-4444</span></a>
+                <p>Jl. Jend. H. Amir Machmud No.563, Cimahi, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40523</p>
+                <div class="social">
+                  <a href="https://www.instagram.com/rensa_wallpapercimahi/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://maps.app.goo.gl/wfL3jYa55TX9aSiC6"><i class="bi bi-geo-alt"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rensa Kopo</h4>
+                <a href="https://api.whatsapp.com/send?phone=6281573544444&text=Hello Rensa Cimahi!"><span>0815-7354-4444</span></a>
+                <p>Jl. Jend. H. Amir Machmud No.563, Cimahi, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40523</p>
+                <div class="social">
+                  <a href="https://www.instagram.com/rensa_wallpapercimahi/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://maps.app.goo.gl/wfL3jYa55TX9aSiC6"><i class="bi bi-geo-alt"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rensa Suniaraja </h4>
+                <a href="https://api.whatsapp.com/send?phone=6281573544444&text=Hello Rensa Cimahi!"><span>0815-7354-4444</span></a>
+                <p>Jl. Jend. H. Amir Machmud No.563, Cimahi, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40523</p>
+                <div class="social">
+                  <a href="https://www.instagram.com/rensa_wallpapercimahi/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://maps.app.goo.gl/wfL3jYa55TX9aSiC6"><i class="bi bi-geo-alt"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rensa Suniaraja Baru</h4>
+                <a href="https://api.whatsapp.com/send?phone=6281573544444&text=Hello Rensa Cimahi!"><span>0815-7354-4444</span></a>
+                <p>Jl. Jend. H. Amir Machmud No.563, Cimahi, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40523</p>
+                <div class="social">
+                  <a href="https://www.instagram.com/rensa_wallpapercimahi/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://maps.app.goo.gl/wfL3jYa55TX9aSiC6"><i class="bi bi-geo-alt"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rensa Rancaekek</h4>
                 <a href="https://api.whatsapp.com/send?phone=6281573544444&text=Hello Rensa Cimahi!"><span>0815-7354-4444</span></a>
                 <p>Jl. Jend. H. Amir Machmud No.563, Cimahi, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40523</p>
                 <div class="social">

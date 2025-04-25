@@ -1573,9 +1573,9 @@ section,
   position: absolute;
   left: 12px;
   right: 12px;
-  bottom: -100%;
+  bottom: 100%;
   z-index: 3;
-  transition: all ease-in-out 0.5s;
+  /* transition: all ease-in-out 0.1s; */
   background: color-mix(in srgb, var(--background-color), transparent 10%);
   padding: 15px;
 }
